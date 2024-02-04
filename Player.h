@@ -8,6 +8,7 @@ class Player : public Object {
 private:
 	int playerHP_;
 	int player_ = Novice::LoadTexture("./Resources/co-la1.4.png");
+	int Hp = Novice::LoadTexture("./Resources/life.png");
 public:
 	Bullet* bullet[5];
 

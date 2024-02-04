@@ -81,7 +81,17 @@ void Player::Draw()
 	Novice::DrawSprite((int)position_.x - ((int)width_ / 2) - 20, (int)position_.y - ((int)height_ / 2),
 		player_, 1, 1, 0.0f, WHITE);
 
-	Novice::DrawEllipse((int)position_.x, (int)position_.y,
-		(int)radius_, (int)radius_, 0.0f, WHITE, kFillModeWireFrame);
+	}
+	if (playerHP_ >= 3) {
+		Novice::DrawSprite(220, 620,
+			Hp, 1, 1, 0.0f, WHITE);
+	}
+	if (playerHP_ >= 2) {
+		Novice::DrawSprite(120, 620,
+			Hp, 1, 1, 0.0f, WHITE);
+	}
+	if (playerHP_ >= 1) {
+		Novice::DrawSprite(20, 620,
+			Hp, 1, 1, 0.0f, WHITE);
 	}
 }

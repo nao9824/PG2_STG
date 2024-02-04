@@ -51,7 +51,5 @@ void Enemy::Draw()
 		Novice::DrawSprite((int)position_.x - ((int)width_ / 2), (int)position_.y - ((int)height_ / 2),
 			enemy_, 1, 1, 0.0f, WHITE);
 
-		Novice::DrawEllipse((int)position_.x, (int)position_.y,
-			(int)radius_, (int)radius_, 0.0f, RED, kFillModeWireFrame);
-	}
+		}
 }
